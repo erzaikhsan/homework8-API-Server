@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "driver": "pg",
+        "user": "postgres",
+        "password": "erza354354",
+        "host": "localhost",
+        "port":"5432",
+        "database": "dvdrental"
+    }
+}
