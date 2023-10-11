@@ -4,7 +4,7 @@ const { filmControllers } = require("../controllers");
 const router = Router();
 
 router.get("/", (req, res) => {
-    filmControllers.getFilm(req, res);
+    filmControllers.getFilms(req, res);
 });
 
 router.get("/:id", (req, res) => {

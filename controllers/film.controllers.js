@@ -1,8 +1,8 @@
 const { filmServices } = require('../services');
 
-async function getFilm(req, res) {
+async function getFilms(req, res) {
     try {
-      const result = await filmServices.getFilm();
+      const result = await filmServices.getFilms();
       res.status(200).json(result.rows)
     } catch (err) {
       res.status(500).send(err.message);
@@ -38,7 +38,7 @@ async function getFilmById(req, res) {
     }
 
   module.exports = {
-    getFilm,
+    getFilms,
     getFilmById,
     getFilmByCategoryId
   }

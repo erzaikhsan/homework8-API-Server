@@ -1,6 +1,6 @@
 const pool = require('../utils/pool')
 
-function getFilm() {
+function getFilms() {
   return new Promise((resolve, reject) => {
     pool.query(
       'SELECT * FROM film order by film_id ASC',
@@ -43,7 +43,7 @@ function getFilmByCategoryId(catId) {
 }
 
 module.exports = {
-  getFilm,
+  getFilms,
   getFilmById,
   getFilmByCategoryId
 };

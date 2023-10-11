@@ -4,7 +4,7 @@ const categoryRoutes = require("./category.routes");
 
 const router = Router();
 
-router.use("/film", filmRoutes);
-router.use("/category", categoryRoutes);
+router.use("/films", filmRoutes);
+router.use("/categories", categoryRoutes);
 
 module.exports = router;
